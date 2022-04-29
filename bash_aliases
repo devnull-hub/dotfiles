@@ -49,7 +49,7 @@ alias fgrep='fgrep --color=auto'
 alias gpush='git push'
 alias gstore='git config credential.helper store'
 alias gs="git status"
-alias gp="git pull"
+alias gpull="git pull"
 alias ggraph='git log --all --decorate --oneline --graph'
 
 # INSTALLATION AND UPGRADE
