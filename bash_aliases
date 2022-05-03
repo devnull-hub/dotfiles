@@ -51,7 +51,7 @@ alias dimg='docker image ls --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}" 
 # # Lists all persistent volumes
 alias dkvlm='docker volume ls'
 # # Diplays a container log, it requires the image name \ ID as parameter
-lias dlgs='docker logs'
+alias dlgs='docker logs'
 # # Streams a container log, it requires the image name \ ID as parameter
 alias dlgsf='docker logs -f'
 # # Initiates a session withing a container, it requires the image name \ ID as parameter followed by the word "bash"
