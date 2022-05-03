@@ -34,9 +34,32 @@ alias usage10='du -hsx * | sort -rh | head -10' # Gives you what is using the mo
 
 # DOCKER COMMON - All docker commands start with "d"
 alias dexec='sudo docker exec -ti'
+# # List all containers by status using custom format
 alias dps='sudo docker ps -a'
+# # List the last 50 lines of logs
 alias dlogs='sudo docker logs -tf --tail="50" '
+# # List all containers IP 
 alias dips="sudo docker ps -q | xargs -n 1 docker inspect --format '{{json .}}' | jq -rs 'map(.Name,.NetworkSettings.Networks[].IPAddress) | .[]'"
+# # List all containers by status using custom format
+alias dpsa='docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
+# # Removes a container, it requires the container name \ ID as parameter
+alias drm='docker rm -f'
+# # Removes an image, it requires the image name \ ID as parameter
+alias drmi='docker rmi'
+# # Lists all images by repository sorted by tag name
+alias dimg='docker image ls --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}" | sort'
+# # Lists all persistent volumes
+alias dkvlm='docker volume ls'
+# # Diplays a container log, it requires the image name \ ID as parameter
+lias dlgs='docker logs'
+# # Streams a container log, it requires the image name \ ID as parameter
+alias dlgsf='docker logs -f'
+# # Initiates a session withing a container, it requires the image name \ ID as parameter followed by the word "bash"
+alias dterm='docker exec -it'
+# # Starts a container, it requires the image name \ ID as parameter
+alias dstrt='docker start'
+# # Stops a container, it requires the image name \ ID as parameter
+alias dstp='docker stop'
 
 # SEARCH AND FIND
 alias gh='history|grep' # search bash history
