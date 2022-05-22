@@ -1,6 +1,14 @@
 # Sync Dotfiles and Config Using Git
 
+# Requirements
+* Git
+* Curl
 
+# Install
+
+Install config tracking in your `$HOME` by running:
+
+`curl -Lks https://bitbucket.org/durdn/cfg/raw/master/.bin/install.sh | /bin/bash`
 
 
 
