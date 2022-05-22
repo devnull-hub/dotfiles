@@ -1,3 +1,7 @@
+# .bashrc_aliases
+# Author: devnullhub <dev.null1776@gmail.com>
+# Source: https://github.com/devnull-hub/cfg/.bash_aliases
+
 #####################
 #                   #
 #       ALIAS       #
