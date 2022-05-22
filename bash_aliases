@@ -93,7 +93,7 @@ alias dps='sudo docker ps -a'
 # # List the last 50 lines of logs
 alias dlogs='sudo docker logs -tf --tail="50" '
 # # List all containers IP 
-alias dips='sudo docker ps -q | xargs -n 1 docker inspect --format '{{json .}}' | jq -rs 'map(.Name,.NetworkSettings.Networks[].IPAddress) | .[]''
+alias dips= "sudo docker ps -q | xargs -n 1 docker inspect --format '{{json .}}' | jq -rs 'map(.Name,.NetworkSettings.Networks[].IPAddress) | .[]'"
 # # List all containers by status using custom format
 alias dpsa='docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"'
 # # Removes a container, it requires the container name \ ID as parameter
