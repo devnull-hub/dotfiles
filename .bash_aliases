@@ -156,6 +156,8 @@ alias showports='netstat -lnptu'
 alias showlistening='lsof -i -n | egrep "COMMAND|LISTEN"'
 alias ping='ping -c 5'
 alias ipe='curl ipinfo.io/ip' # external ip
+alias myip='hostname -I'
+alias myipe='curl https://ifconfig.co/json' # external ip
 alias header='curl -I' # get web server headers 
 
 # MISCELLANEOUS

@@ -15,3 +15,4 @@ Install config tracking in your `$HOME` by running:
 ## References
 * [The best way to store your dotfiles: A bare Git repository](https://www.atlassian.com/git/tutorials/dotfiles)
 * [The Ultimate Bad Ass .bashrc File](https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c)
+* [Awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
