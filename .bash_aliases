@@ -159,6 +159,11 @@ alias ipe='curl ipinfo.io/ip' # external ip
 alias myip='hostname -I'
 alias myipe='curl https://ifconfig.co/json' # external ip
 alias header='curl -I' # get web server headers 
+alias torhip='curl --proxy localhost:8888 http://ifconfig.io' 
+alias torsip='curl --proxy socks5h://localhost:1080 http://ipinfo.io'
+alias torhck='curl --proxy localhost:8888 https://check.torproject.org/api/ip' 
+alias torsck='curl --proxy socks5h://localhost:1080 https://check.torproject.org/api/ip'
+
 
 # MISCELLANEOUS
 alias wget='wget -c'
