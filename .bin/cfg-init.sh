@@ -1,4 +1,4 @@
-git clone --bare http://192.168.0.249:3000/vnull/dotfiles.git $HOME/.cfg
+git clone --bare https://github.com/devnull-hub/dotfiles.git $HOME/.cfg
 function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
