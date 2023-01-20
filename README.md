@@ -8,7 +8,7 @@
 
 Install config tracking in your `$HOME` by running:
 
-`curl -Lks http://git01.lan.lo:3000/vnull/dotfiles/raw/branch/master/.bin/cfg-init.sh | /bin/bash`
+`curl -Lks https://raw.githubusercontent.com/devnull-hub/dotfiles/master/.bin/cfg-init.sh | /bin/bash`
 
 
 
